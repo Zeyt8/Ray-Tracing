@@ -39,7 +39,7 @@ public:
 		}
 	}
 
-	virtual void OnUpdate(float ts) override
+	void OnUpdate(float ts) override
 	{
 		if (m_Camera.OnUpdate(ts))
 		{
@@ -47,7 +47,7 @@ public:
 		}
 	}
 
-	virtual void OnUIRender() override
+	void OnUIRender() override
 	{
 		ImGui::Begin("Settings");
 		ImGui::Text("Last render: %.3fms", m_LastRenderTime);
